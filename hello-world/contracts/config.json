@@ -1,4 +1,14 @@
 {
   "version": 1,
-  "deployAliases": {}
+  "deployAliases": {
+    "hello-world-berkeley": {
+      "networkId": "testnet",
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/hello-world-berkeley.json",
+      "feepayerKeyPath": "/home/omer/.cache/zkapp-cli/keys/first_trial_ac.json",
+      "feepayerAlias": "first_trial_ac",
+      "fee": "0.1",
+      "smartContract": "Square"
+    }
+  }
 }
