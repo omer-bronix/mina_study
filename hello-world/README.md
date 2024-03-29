@@ -11,3 +11,16 @@ https://github.com/omer-bronix/mina_study/blob/develop/hello-world/contracts/src
 
 * For more information on how to build, deploy or interact with your deployed contract, see the readme file inside the contracts folder: 
 https://github.com/omer-bronix/mina_study/tree/develop/hello-world/contracts#readme
+
+
+## Requirements
+
+* Make sure you have the latest version of the zkApp CLI installed:
+
+```bash
+npm install -g zkapp-cli
+```
+
+* Make sure the aura wallet chrome extension is setup, and an account with Testnet Mina is linked.
+** https://www.aurowallet.com/
+** To request testnet mina: https://faucet.minaprotocol.com/?address=<YOUR_PUBLIC_ADDRESS>&?explorer=minaexplorer 
