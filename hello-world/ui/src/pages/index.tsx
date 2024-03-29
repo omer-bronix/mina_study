@@ -8,7 +8,7 @@ import arrowRightSmall from "../../public/assets/arrow-right-small.svg";
 import ZkAppWorkerClient from "./zkappWorkerClient";
 import { Field } from "o1js";
 
-const ZKAPP_ADDRESS = "B62qqXTBHo4yb3QoCdJg76Not8EHd4gsPSAog85fd3qGDbs491V6xU9";
+const ZKAPP_ADDRESS = "";
 let transactionFee = 0.1;
 
 export default function Home() {
