@@ -22,5 +22,5 @@ npm install -g zkapp-cli
 ```
 
 * Make sure the aura wallet chrome extension is setup, and an account with Testnet Mina is linked.
-** https://www.aurowallet.com/
-** To request testnet mina: https://faucet.minaprotocol.com/?address=<YOUR_PUBLIC_ADDRESS>&?explorer=minaexplorer 
+    * https://www.aurowallet.com/
+    * To request testnet mina: https://faucet.minaprotocol.com/?address=<YOUR_PUBLIC_ADDRESS>&?explorer=minaexplorer 
