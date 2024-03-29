@@ -8,6 +8,12 @@ This template uses TypeScript.
 npm run build
 ```
 
+## How to run locally
+
+```sh
+npm run build && node build/src/interact.js
+```
+
 ## How to run tests
 
 ```sh
