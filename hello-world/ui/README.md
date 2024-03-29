@@ -24,7 +24,10 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-To learn more about javascript workers take a look at the following resources:
+To learn about how to setup your ui, take a look at the following sources:
+- https://docs.minaprotocol.com/zkapps/tutorials/zkapp-ui-with-react
+
+To learn more about javascript workers, take a look at the following resources:
 - https://www.youtube.com/watch?v=Gcp7triXFjg
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
 
