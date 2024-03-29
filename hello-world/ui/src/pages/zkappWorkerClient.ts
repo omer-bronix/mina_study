@@ -22,6 +22,7 @@ export default class ZkAppWorkerClient {
       if (event.data.error) {
         // If the worker sends an error, reject the corresponding promise
         this.promises[event.data.id].reject(event.data.error);
+        // this.promises[event.data.id].resolve(event.data.data);
       } else {
         // Otherwise, resolve the promise with the received data
         this.promises[event.data.id].resolve(event.data.data);

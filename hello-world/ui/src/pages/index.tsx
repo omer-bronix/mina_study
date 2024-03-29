@@ -131,8 +131,24 @@ export default function Home() {
     await state.zkAppWorkerClient!.fetchAccount(state.feePayerPublicKey58);
     console.log("fee payer account fetched");
 
-    await state.zkAppWorkerClient!.createUpdateTransaction(textFieldValue);
-    console.log("transaction created");
+    // await state.zkAppWorkerClient!.createUpdateTransaction(textFieldValue);
+    // console.log("transaction created");
+
+    try {
+      await state.zkAppWorkerClient!.createUpdateTransaction(textFieldValue);
+      console.log("transaction created");
+    } catch (e) {
+      if (e instanceof Error) {
+        if (e.message.includes("Field.assertEquals()")) {
+          alert(
+            "Create Transaction error. your input is not equal to current on-chain value"
+          );
+        }
+        setState({ ...state, creatingTransaction: false });
+        return;
+      }
+      console.log(e);
+    }
 
     await state.zkAppWorkerClient!.proveUpdateTransaction();
     console.log("transaction proved");
