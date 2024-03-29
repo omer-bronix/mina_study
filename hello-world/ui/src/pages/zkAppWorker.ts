@@ -53,6 +53,18 @@ const functions = {
     const currentNum = workerState.zkApp!.num.get();
     return JSON.stringify(currentNum.toJSON());
   },
+  createUpdateTransaction: async (args: { newNumber: number }) => {
+    const txn = await Mina.transaction(() => {
+      workerState.zkApp!.update(Field(args.newNumber));
+    });
+    workerState.transaction = txn;
+  },
+  proveUpdateTransaction: async (args: {}) => {
+    await workerState.transaction!.prove();
+  },
+  getTransactionJSON: async (args: {}) => {
+    return workerState.transaction!.toJSON();
+  },
 };
 
 export type WorkerFunctions = keyof typeof functions;

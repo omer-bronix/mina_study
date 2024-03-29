@@ -73,4 +73,14 @@ export default class ZkAppWorkerClient {
     const currentNum = await this._call("getCurrentNum", {});
     return Field.fromJSON(JSON.parse(currentNum as string));
   }
+  createUpdateTransaction(newNumber: number) {
+    return this._call("createUpdateTransaction", { newNumber: newNumber });
+  }
+  proveUpdateTransaction() {
+    return this._call("proveUpdateTransaction", {});
+  }
+  async getTransactionJSON() {
+    const result = await this._call("getTransactionJSON", {});
+    return result;
+  }
 }
