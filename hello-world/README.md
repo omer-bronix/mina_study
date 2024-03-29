@@ -1,6 +1,8 @@
 # Hello World zkapp 
 
-* This project contains a contract with an update method.
+* This project contains;
+    * contract with an update method.
+    * ui to interact with it the contract
 
 * The update method checks if the given state is equal to the on-chain state and if so, updates the on-chain state with its square.
 
@@ -11,6 +13,9 @@ https://github.com/omer-bronix/mina_study/blob/develop/hello-world/contracts/src
 
 * For more information on how to build, deploy or interact with your deployed contract, see the readme file inside the contracts folder: 
 https://github.com/omer-bronix/mina_study/tree/develop/hello-world/contracts#readme
+
+* For more information on the ui see the readme file inside the ui folder:
+https://github.com/omer-bronix/mina_study/tree/develop/hello-world/ui
 
 
 ## Requirements
